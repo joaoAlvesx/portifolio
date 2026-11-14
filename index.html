@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F6F3EC" />
+    <title>João Gonçalves — Redes, infraestrutura e projetos</title>
+    <meta name="description" content="João Gonçalves, estudante de Engenharia de Computação na UFMS. Projetos com Linux, redes, software e robótica, construídos para aprender." />
+    <meta property="og:title" content="João Gonçalves — Da ideia à infraestrutura." />
+    <meta property="og:description" content="Um laboratório digital de projetos, redes, software e robótica." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image:alt" content="João Gonçalves — Da ideia à infraestrutura." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      try {
+        const saved = localStorage.getItem('portfolio-theme');
+        document.documentElement.dataset.theme = saved === 'dark' || saved === 'light' ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      } catch { document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
